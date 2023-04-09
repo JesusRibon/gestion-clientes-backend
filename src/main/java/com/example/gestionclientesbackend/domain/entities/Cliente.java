@@ -20,4 +20,8 @@ public class Cliente {
   private String apellido;
 
   private String email;
+
+  private int telefono;
+
+  private String direccion;
 }

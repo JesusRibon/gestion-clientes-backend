@@ -1,7 +1,6 @@
 package com.example.gestionclientesbackend.infrastructure.adapter;
 
 import com.example.gestionclientesbackend.domain.entities.Cliente;
-import com.example.gestionclientesbackend.domain.service.ClienteUpdateService;
 import com.example.gestionclientesbackend.infrastructure.repository.ClienteRepository;
 import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;

@@ -33,6 +33,6 @@ public class ClienteGetAdapter implements ClienteGetService {
 
 
   private Cliente buildCliente(ClienteDto cliente){
-    return new Cliente(cliente.getId(),cliente.getNombre(),cliente.getApellido(),cliente.getEmail());
+    return new Cliente(cliente.getId(),cliente.getNombre(),cliente.getApellido(),cliente.getEmail(),cliente.getTelefono(),cliente.getDireccion());
   }
 }

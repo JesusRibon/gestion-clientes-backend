@@ -2,7 +2,7 @@ package com.example.gestionclientesbackend.application;
 
 import com.example.gestionclientesbackend.domain.entities.Cliente;
 import com.example.gestionclientesbackend.domain.service.ClienteGetService;
-import com.example.gestionclientesbackend.domain.service.ClienteUpdateService;
+import com.example.gestionclientesbackend.infrastructure.adapter.ClienteUpdateService;
 import com.example.gestionclientesbackend.expeciones.ClienteExeption;
 import com.example.gestionclientesbackend.infrastructure.repository.ClienteRepository;
 import jakarta.transaction.Transactional;
@@ -24,7 +24,9 @@ public class ClienteUpdate implements ClienteUpdateService {
       clienteRepository.updateCliente(cliente.getId(),
           cliente.getNombre(),
           cliente.getApellido(),
-          cliente.getEmail());
+          cliente.getEmail(),
+          cliente.getTelefono(),
+          cliente.getDireccion());
 
     }else{
       throw new ClienteExeption("El cliente que desea actualizar no existe con ese ID"+id);

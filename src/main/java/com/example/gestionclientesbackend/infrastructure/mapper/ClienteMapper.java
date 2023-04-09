@@ -13,6 +13,8 @@ public interface ClienteMapper {
   @Mapping(target = "nombre" , source = "nombre")
   @Mapping(target = "apellido" , source = "apellido")
   @Mapping(target = "email" , source = "email")
+  @Mapping(target = "telefono" , source = "telefono")
+  @Mapping(target = "direccion" , source = "direccion")
 
  Cliente toClienteEntity(ClienteDto clienteDto);
 }

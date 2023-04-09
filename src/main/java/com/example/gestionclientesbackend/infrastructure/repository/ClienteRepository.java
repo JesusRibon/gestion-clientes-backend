@@ -10,12 +10,14 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ClienteRepository extends JpaRepository<ClienteDto , String> {
 
-    @Query(nativeQuery = true , value = "update cliente_dto set nombre = :nombre , apellido  = :apellido , email = :email  where id = :id")
+    @Query(nativeQuery = true , value = "update cliente_dto set nombre = :nombre , apellido  = :apellido , email = :email , telefono = :telefono , direccion = :direccion  where id = :id")
     @Modifying
     void updateCliente(@Param("id") String id,
                         @Param("nombre") String nombre,
                        @Param("apellido") String apellido,
-                       @Param("email") String email);
+                       @Param("email") String email,
+                       @Param("telefono") int telefono,
+                       @Param("direccion") String direccion);
 
 
 }

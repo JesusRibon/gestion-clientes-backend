@@ -1,4 +1,4 @@
-package com.example.gestionclientesbackend.domain.service;
+package com.example.gestionclientesbackend.infrastructure.adapter;
 
 import com.example.gestionclientesbackend.domain.entities.Cliente;
 
