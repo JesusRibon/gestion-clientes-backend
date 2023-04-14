@@ -1,6 +1,7 @@
 package com.example.gestionclientesbackend.application;
 
 import com.example.gestionclientesbackend.domain.entities.Cliente;
+import com.example.gestionclientesbackend.domain.service.ClienteGetService;
 import com.example.gestionclientesbackend.domain.service.ClienteSaveService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -13,8 +14,12 @@ public class ClienteSave {
 
   private final ClienteSaveService clienteSaveService;
 
+  private final ClienteGetService clienteGetService;
+
   public Cliente saveCliente(Cliente cliente){
-    return clienteSaveService.save(cliente);
+
+      return clienteSaveService.save(cliente );
+
 
   }
 }

@@ -32,6 +32,5 @@ public class ClienteUpdate implements ClienteUpdateService {
       throw new ClienteExeption("El cliente que desea actualizar no existe con ese ID"+id);
     }
 
-
   }
 }
